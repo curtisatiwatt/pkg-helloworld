@@ -1,5 +1,5 @@
 {
-  "name": "pkg-hello-axios",
+  "name": "pkg-hello-prisma",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,11 @@
   "pkg": {
     "scripts": "index.js",
     "assets": [
-      "node_modules/axios/**/*"
+      "node_modules/axios/**/*",
+      "node_modules/@prisma/client/**/*",
+      "node_modules/.prisma/**/*",
+      ".env",
+      "prisma/**/*"
     ],
     "targets": [
       "node16-win-x64"
@@ -20,6 +24,10 @@
     "outputPath": "dist"
   },
   "dependencies": {
+    "@prisma/client": "^5.15.0",
     "axios": "^1.7.2"
+  },
+  "devDependencies": {
+    "prisma": "^5.15.0"
   }
 }
