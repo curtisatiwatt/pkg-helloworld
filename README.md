@@ -17,7 +17,8 @@ cd pkg-helloworld
 ```bash
 npm install
 ```
-4. Build the entire proejct into exe
+4. Make a copy of `.env` from `.env.example` and enter your correct database info
+5. Build the entire proejct into exe
 ```bash
 pkg .
 ```
