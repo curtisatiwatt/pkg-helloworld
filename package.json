@@ -1,5 +1,5 @@
 {
-  "name": "pkg-hello-world",
+  "name": "pkg-hello-axios",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,11 +11,15 @@
   "license": "ISC",
   "pkg": {
     "scripts": "index.js",
+    "assets": [
+      "node_modules/axios/**/*"
+    ],
     "targets": [
-      "node16-win-x64",
-      "node16-linux-x64",
-      "node16-macos-x64"
+      "node16-win-x64"
     ],
     "outputPath": "dist"
+  },
+  "dependencies": {
+    "axios": "^1.7.2"
   }
 }
